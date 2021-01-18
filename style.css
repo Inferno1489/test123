@@ -1,0 +1,47 @@
+.div1{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	float: left;
+}
+.div4{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	clear: both;
+}
+.div5{
+	width: 200px;
+	height: 200px;
+	background-color: cyan;
+}
+.div6{
+	width: 500px;
+	height: 500px;
+	background-color: black;
+}
+.div7{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+/*У всех кроме первого*/
+.div1 + .div1{
+	margin-left: 10px;
+}
+/*Обратиться сразу к двум классам*/
+.newclass, .sp{
+	width: 400px;
+}
+/*Обратиться ко всем элементам внутри элемента*/
+.div3 .div4{
+	background-color: green;
+}
+/*Обратиться ко всех элементам у которых есть конкретный атрибут с конкретным значением*/
+input[type = "text"]{
+	width: 400px;
+}
+/*Изменение одного элемента при наведении на другой (Только если менющийся элемент является дочерним для того, на который наводимся)*/
+.div6:hover .div7{
+	background-color: green;
+}
